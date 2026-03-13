@@ -113,13 +113,4 @@ Variables declared with let and const exist but cannot be accessed before declar
 
 5-conversion:explicit ,coercion:implicit
 
----------------------------------------------------------LeetCode--------------------------------------------------------------------------
-code:*/
-var createCounter = function(init) {
-  let current = init;
-  return {
-    increment: () => ++current,
-    decrement: () => --current,
-    reset: () => (current = init)
-  };
-};
+
