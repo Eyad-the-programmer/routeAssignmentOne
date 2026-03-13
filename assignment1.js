@@ -1,31 +1,31 @@
 // 1
 const result1 = Number("123") + 7;
-console.log(result1); // 130
+console.log(result1); 
 
 //2
 function checkFalsy(value) {
   if (!value) return "Invalid";
   return "Valid";
 }
-console.log(checkFalsy(0)); // "Invalid"
+console.log(checkFalsy(0)); 
 
 // 3
 for (let i = 1; i <= 10; i++) {
   if (i % 2 === 0) continue;
   console.log(i);
 }
-// Output: 1 3 5 7 9
+
 
 // 4
 const arr = [1, 2, 3, 4, 5];
 const evens = arr.filter(n => n % 2 === 0);
-console.log(evens); // [2, 4]
+console.log(evens);
 
 // 5
 const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6];
 const merged = [...arr1, ...arr2];
-console.log(merged); // [1,2,3,4,5,6]
+console.log(merged); 
 
 // 6
 function getDay(num) {
@@ -40,12 +40,12 @@ function getDay(num) {
     default: return "Invalid day";
   }
 }
-console.log(getDay(2)); // Monday
+console.log(getDay(2));
 
 // 7
 const strings = ["a", "ab", "abc"];
 const lengths = strings.map(s => s.length);
-console.log(lengths); // [1,2,3]
+console.log(lengths);
 
 // 8
 function divisible(num) {
@@ -56,7 +56,7 @@ console.log(divisible(15));
 
 // 9
 const square = n => n * n;
-console.log(square(5)); // 25
+console.log(square(5));
 
 // 10
 function formatPerson({ name, age }) {
@@ -69,7 +69,7 @@ console.log(formatPerson(person));
 function sum(...nums) {
   return nums.reduce((a, b) => a + b, 0);
 }
-console.log(sum(1,2,3,4,5)); // 15
+console.log(sum(1,2,3,4,5));
 
 // 12
 function delayedSuccess() {
@@ -83,7 +83,7 @@ delayedSuccess().then(console.log);
 function maxNum(arr) {
   return Math.max(...arr);
 }
-console.log(maxNum([1,3,7,2,4])); // 7
+console.log(maxNum([1,3,7,2,4]));
 
 // 14
 function getKeys(obj) {
